@@ -1,6 +1,52 @@
 # DataCamp-Building_Financial_Reports
 Creating a beginner’s guide for financial analysis through DataCamps Projects
 
+Given dataset: (data/Balance_Sheet.xlsx)
+
+### Inspecting the Data
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 14 columns):
+ #   Column                     Non-Null Count  Dtype  
+---  ------                     --------------  -----  
+ 0   Unnamed: 0                 60 non-null     int64  
+ 1   Year                       60 non-null     int64  
+ 2   comp_type                  60 non-null     object 
+ 3   company                    60 non-null     object 
+ 4   Accounts Payable           60 non-null     int64  
+ 5   Cash                       60 non-null     int64  
+ 6   Inventory                  44 non-null     float64
+ 7   Property Plant Equipment   60 non-null     int64  
+ 8   Short Term Investments     37 non-null     float64
+ 9   Total Assets               60 non-null     int64  
+ 10  Total Current Assets       60 non-null     int64  
+ 11  Total Current Liabilities  60 non-null     int64  
+ 12  Total Liab                 60 non-null     int64  
+ 13  Total Stockholder Equity   60 non-null     int64  
+dtypes: float64(2), int64(10), object(2)
+memory usage: 6.7+ KB
+None
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 9 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   Unnamed: 0                60 non-null     int64 
+ 1   Year                      60 non-null     int64 
+ 2   comp_type                 60 non-null     object
+ 3   company                   60 non-null     object
+ 4   Cost Of Goods Sold        60 non-null     int64 
+ 5   Gross Profit              60 non-null     int64 
+ 6   Operating Income          60 non-null     int64 
+ 7   Total Operating Expenses  60 non-null     int64 
+ 8   Total Revenue             60 non-null     int64 
+dtypes: int64(7), object(2)
+memory usage: 4.3+ KB
+None
+
+```
 ### 1. Understanding the Dataset
 We are analyzing financial data from two key datasets:
 

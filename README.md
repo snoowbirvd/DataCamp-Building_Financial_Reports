@@ -63,3 +63,16 @@ The goal of this analysis is to:
  - Explore the relationship between leverage and profitability in real estate companies.
    
 This helps us understand financial trends across industries and make informed decisions about their financial health and risks.
+
+## 3. Key Ratios
+
+### **Profitability Ratio**
+- **Definition**: Measures how effectively a company converts revenue into profit.
+- **Formula**:  
+  \[
+  \text{Profitability Ratio} = \frac{\text{Total Revenue} - \text{Cost of Goods Sold}}{\text{Total Revenue}}
+  \]
+- **Code**:
+  ```python
+  df_ratios["profitability_ratio"] = (df_ratios["Total Revenue"] - df_ratios["Cost Of Goods Sold"]) / df_ratios["Total Revenue"]
+

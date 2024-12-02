@@ -52,10 +52,10 @@ None
 ### 1. Understanding the Dataset
 We are analyzing financial data from two key datasets:
 
- - 1. Balance Sheet: Details the company’s financial position—what it owns (assets), what it owes (liabilities), and what’s left for shareholders (equity).
- - 2. Income Statement: Summarizes the company’s income (revenue) and expenses over time.
+1. **Balance Sheet:** Details the company’s financial position—what it owns **(assets)**, what it owes **(liabilities)**, and what’s left for shareholders **(equity)**.
+2. **Income Statement:** Summarizes the company’s income **(revenue)** and **expenses over time**.
 
-### Objectives
+#### Objectives
 The goal of this analysis is to:
 
  - Identify which type of company (comp_type) has the lowest profitability ratio.
@@ -64,30 +64,25 @@ The goal of this analysis is to:
    
 This helps us understand how industries differ in profitability and risk, and how debt impacts profitability for specific industries.
 
-### 2. Financial Ratios
+#### Financial Ratios:
 
 #### Profitability Ratio
 **What It Is:** Shows how efficiently a company converts its revenue into profit.
 
 **Why It Matters:** High profitability ratios indicate efficient cost management and strong business performance, while low ratios may signal high expenses or pricing issues.
+
 - **Formula**:
-  Profitability Ratio = (Profit) / Total Revenue
-  Profit = Total Revenue - Cost of Goods Sold 
-- **Code**:
-  ```python
-  df_ratios["profitability_ratio"] = (df_ratios["Total Revenue"] - df_ratios["Cost Of Goods Sold"]) / df_ratios["Total Revenue"]
+   Profitability Ratio = (Profit) / Total Revenue
+   Profit = Total Revenue - Cost of Goods Sold 
 
-#### Leverage Ratio
-**Definition**: Indicates how much debt a company uses to finance its operations compared to equity.
-**Why It Matters:** High leverage can support growth but increases financial risk, especially during economic downturns.
+ #### Leverage Ratio
+ **Definition**: Indicates how much debt a company uses to finance its operations compared to equity.
+ **Why It Matters:** High leverage can support growth but increases financial risk, especially during economic downturns.
 
-- **Formula**:  
-  Leverage Ratio = Total Liabilities / Total Shareholder Equity
-**Code**:
-  ```python
-  df_ratios["leverage_ratio"] = df_ratios["Total Liab"] / df_ratios["Total Stockholder Equity"]
+ - **Formula**:  
+   Leverage Ratio = Total Liabilities / Total Shareholder Equity
 
-### 3. How Did We Analyze the Data?
+### 2. How Did We Analyze the Data?
 **Step 1: Merging Datasets**
 
 We combined the balance sheet and income statement data into a single dataset (df_ratios) for comprehensive analysis.

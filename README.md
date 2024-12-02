@@ -1,7 +1,9 @@
 # DataCamp-Building_Financial_Reports
-Creating a beginner’s guide for financial analysis through DataCamps Projects
+Creating a holistic beginner’s guide for financial analysis through DataCamps Projects
 
-Given dataset: (data/Balance_Sheet.xlsx)
+Given dataset: 
+[Balance_sheet.xlsx](data/Balance_Sheet.xlsx)
+[Income_Statement.xlsx](data/Income_Statement.xlsx)
 
 ### Inspecting the Data
 

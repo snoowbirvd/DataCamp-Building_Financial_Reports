@@ -83,7 +83,7 @@ This helps us understand how industries differ in profitability and risk, and ho
 
 - **Formula**:  
   Leverage Ratio = Total Liabilities / Total Shareholder Equity
-- **Code**:
+**Code**:
   ```python
   df_ratios["leverage_ratio"] = df_ratios["Total Liab"] / df_ratios["Total Stockholder Equity"]
 
@@ -156,7 +156,9 @@ Using pivot tables and visualizations, we:
 
 **Code**:
   ```python
-  df_ratios.pivot_table(index="comp_type", values="profitability_ratio")
+  profitability_pivot = df_ratios.pivot_table(index="comp_type", values="profitability_ratio")
+  lowest_profitability = profitability_pivot['profitability_ratio'].idxmin()
+  print('The company type with the lowest profitability ratio is: ' + str(lowest_profitability))
 
 ```
 ```markdown   

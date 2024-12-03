@@ -145,14 +145,17 @@ Using pivot tables and visualizations, we:
 2. Identified the company type with the highest leverage ratio.
 3. Examined how leverage impacts profitability in real estate companies.
 
-### 4. Analyzing Results
 **Finding 1:** Lowest Profitability Ratio
 **Result:** FMCG (Fast-Moving Consumer Goods) has the lowest profitability ratio.
 
 **Code**:
   ```python
-  profitability_pivot = df_ratios.pivot_table(index="comp_type", values="profitability_ratio")
-  lowest_profitability = profitability_pivot['profitability_ratio'].idxmin()
+  # Use pivot table to calculate the average profitability ratio per company type
+  pivot_profitability = df_ratios.pivot_table(index="comp_type", values="profitability_ratio")
+  print(pivot_profitability)
+
+  # Find the company type with the lowest profitability ratio
+  lowest_profitability = pivot_profitability["profitability_ratio"].idxmin()
   print('The company type with the lowest profitability ratio is: ' + str(lowest_profitability))
 
 ```
@@ -170,5 +173,64 @@ Explanation:
 Low Margins: FMCG operates on low margins but compensates with high sales volumes.
 Cash Flow: They sell goods quickly, resulting in low inventory levels and fast turnover.
 Why It Matters: While low profitability might seem unfavorable, FMCG thrives on efficient operations and strong market presence.
+
+**Finding 2:** Highest Leverage Ratio
+**Result:** Real Estate has the highest leverage ratio.
+
+**Code**:
+  ```python
+ # Use pivot table to calculate the average leverage ratio per company type
+ pivot_leverage = df_ratios.pivot_table(index="comp_type", values="leverage_ratio")
+ print(pivot_leverage)
+
+ # Find the company type with the highest leverage ratio
+ highest_leverage = pivot_leverage["leverage_ratio"].idxmax()
+ print('The company type with the highest leverage ratio is: ' + str(highest_leverage))
+```
+```markdown   
+comp_type        leverage_ratio
+                
+fmcg             2.997896
+real_est         5.692041
+tech             1.777448
+The company type with the highest leverage ratio is: real_est
+```
+
+---
+Explanation:
+Real estate companies borrow heavily to finance large, long-term projects.
+While this increases risk, it is often necessary for capital-intensive industries.
+
+**Finding 3:** Relationship Between Leverage and Profitability in Real Estate
+**Result:** Positive relationship between leverage and profitability in real estate.
+
+
+**Code**:
+  ```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df_real_est = df_ratios.loc[df_ratios["comp_type"] == "real_est"]
+sns.regplot(data=df_real_est, x="leverage_ratio", y="profitability_ratio")
+
+# Add labels and title for clarity
+plt.title("Relationship Between Leverage and Profitability in Real Estate Companies")
+plt.grid(True)
+plt.show()
+
+# Determine the relationship
+correlation = df_real_est["leverage_ratio"].corr(df_real_est["profitability_ratio"])
+if correlation > 0:
+    relationship = "positive"
+elif correlation < 0:
+    relationship = "negative"
+else:
+    relationship = "no relationship"
+    
+print("Relationship between leverage and profitability in real estate companies:", relationship)
+
+```
+
+
 
 

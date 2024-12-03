@@ -230,6 +230,12 @@ else:
 print("Relationship between leverage and profitability in real estate companies:", relationship)
 
 ```
+![correlation](correlation scatter plot.png)
+
+![](image)
+
+
+
 Relationship Classification: Based on the correlation value:
 
 A positive correlation means companies with higher leverage also tend to have higher profitability.

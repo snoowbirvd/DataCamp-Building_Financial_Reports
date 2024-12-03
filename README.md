@@ -1,5 +1,5 @@
 # DataCamp-Building_Financial_Reports
-Creating a holistic beginner’s guide for financial analysis through DataCamp's Projects
+Holistic learning guide for financial analysis - DataCamp's Projects (Intermediate level) 
 
 Given dataset: 
 [Balance_sheet.xlsx](data/Balance_Sheet.xlsx)

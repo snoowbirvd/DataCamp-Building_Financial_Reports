@@ -167,13 +167,13 @@ real_est              0.534848
 tech                  0.572062
 The company type with the lowest profitability ratio is: fmcg
 ```
----
-Explanation:
+Remarks:
 
 Low Margins: FMCG operates on low margins but compensates with high sales volumes.
 Cash Flow: They sell goods quickly, resulting in low inventory levels and fast turnover.
 Why It Matters: While low profitability might seem unfavorable, FMCG thrives on efficient operations and strong market presence.
 
+---
 **Finding 2:** Highest Leverage Ratio
 **Result:** Real Estate has the highest leverage ratio.
 
@@ -196,11 +196,11 @@ tech             1.777448
 The company type with the highest leverage ratio is: real_est
 ```
 
----
-Explanation:
+Remarks:
 Real estate companies borrow heavily to finance large, long-term projects.
 While this increases risk, it is often necessary for capital-intensive industries.
 
+---
 **Finding 3:** Relationship Between Leverage and Profitability in Real Estate
 **Result:** Positive relationship between leverage and profitability in real estate.
 
@@ -230,7 +230,13 @@ else:
 print("Relationship between leverage and profitability in real estate companies:", relationship)
 
 ```
+Relationship Classification: Based on the correlation value:
 
+A positive correlation means companies with higher leverage also tend to have higher profitability.
+A negative correlation means companies with higher leverage tend to have lower profitability.
+No relationship (correlation near zero) means leverage and profitability are not significantly linked.
 
+Remarks: Positive relationship: Indicates that real estate companies benefit from using leverage, potentially due to the capital-intensive nature of the industry where debt is used to invest in long-term, revenue-generating assets.
+In the real estate sector, high leverage might be a strategic choice. Debt could be used to finance property acquisitions or developments, which eventually generate significant profits (e.g., rental income or property sales).
 
 

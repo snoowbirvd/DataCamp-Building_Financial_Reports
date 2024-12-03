@@ -230,19 +230,19 @@ else:
 print("Relationship between leverage and profitability in real estate companies:", relationship)
 
 ```
-![correlation](correlation scatter plot.png)
+![Profitability Graph](https://github.com/snoowbirvd/DataCamp-Building_Financial_Reports/blob/b2916cf72487f7c9ac352621f42dd6c1a473c649/image/correlation%20scatter%20plot.png)
 
-![](image)
+```markdown   
+Relationship between leverage and profitability in real estate companies: positive
+```
 
+**Relationship Classification: Based on the correlation value:**
 
+- A positive correlation means companies with higher leverage also tend to have higher profitability.
+- A negative correlation means companies with higher leverage tend to have lower profitability.
+- No relationship (correlation near zero) means leverage and profitability are not significantly linked.
 
-Relationship Classification: Based on the correlation value:
-
-A positive correlation means companies with higher leverage also tend to have higher profitability.
-A negative correlation means companies with higher leverage tend to have lower profitability.
-No relationship (correlation near zero) means leverage and profitability are not significantly linked.
-
-Remarks: Positive relationship: Indicates that real estate companies benefit from using leverage, potentially due to the capital-intensive nature of the industry where debt is used to invest in long-term, revenue-generating assets.
+**Remarks:** Positive relationship: Indicates that real estate companies benefit from using leverage, potentially due to the capital-intensive nature of the industry where debt is used to invest in long-term, revenue-generating assets.
 In the real estate sector, high leverage might be a strategic choice. Debt could be used to finance property acquisitions or developments, which eventually generate significant profits (e.g., rental income or property sales).
 
 

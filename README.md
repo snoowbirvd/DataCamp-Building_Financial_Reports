@@ -76,7 +76,7 @@ High profitability ratios indicate efficient cost management and strong business
    Profit = Total Revenue - Cost of Goods Sold 
 
  #### Leverage Ratio
- **Definition**: Indicates how much debt a company uses to finance its operations compared to equity.
+ Indicates how much debt a company uses to finance its operations compared to equity.
  High leverage can support growth but increases financial risk, especially during economic downturns.
 
  - **Formula**:  

@@ -67,9 +67,9 @@ This helps us understand how industries differ in profitability and risk, and ho
 #### Financial Ratios:
 
 #### Profitability Ratio
-**What It Is:** Shows how efficiently a company converts its revenue into profit.
+Shows how efficiently a company converts its revenue into profit.
 
-**Why It Matters:** High profitability ratios indicate efficient cost management and strong business performance, while low ratios may signal high expenses or pricing issues.
+High profitability ratios indicate efficient cost management and strong business performance, while low ratios may signal high expenses or pricing issues.
 
 - **Formula**:
    Profitability Ratio = (Profit) / Total Revenue
@@ -77,7 +77,7 @@ This helps us understand how industries differ in profitability and risk, and ho
 
  #### Leverage Ratio
  **Definition**: Indicates how much debt a company uses to finance its operations compared to equity.
- **Why It Matters:** High leverage can support growth but increases financial risk, especially during economic downturns.
+ High leverage can support growth but increases financial risk, especially during economic downturns.
 
  - **Formula**:  
    Leverage Ratio = Total Liabilities / Total Shareholder Equity
